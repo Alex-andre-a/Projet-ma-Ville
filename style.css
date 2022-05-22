@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merienda One", cursive;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+/* ******************************* HEADER **********************************  */
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.drapeau {
+  background-image: url(/assets/images/320px-Flag_of_Japan.svg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 120px;
+}
+
+.navbar {
+  height: 60px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 250px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px red;
+}
+
+.navbar a:hover {
+  color: red;
+  text-shadow: 1px 1px 1px white;
+}
+
+/* ******************************* SECTION 1 **********************************  */
+
+.section1 {
+  width: 100%;
+  height: 800px;
+}
+
+.section1 iframe {
+  height: 800px;
+  width: 100%;
+}
+
+.section1titre {
+  position: absolute;
+  top: 750px;
+  left: 220px;
+  height: auto;
+  width: 300px;
+}
+
+.section1titre h1 {
+  color: white;
+  font-size: 80px;
+  text-shadow: 3px 3px 3px black;
+}
+
+.section1titre h1 span {
+  color: red;
+}
+
+/* ******************************* SECTION 2 **********************************  */
+
+.section2 {
+  height: 800px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.section2titre {
+  width: 800px;
+  height: 100px;
+  margin-top: 50px;
+}
+
+.section2titre h2 {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 1px 1px 1px red;
+}
