@@ -55,17 +55,19 @@ header {
 .section1 {
   width: 100%;
   height: 800px;
+  background-color: black;
 }
 
 .section1 iframe {
   height: 800px;
   width: 100%;
+  padding: 20px 0;
 }
 
 .section1titre {
   position: absolute;
   top: 750px;
-  left: 220px;
+  right: 150px;
   height: auto;
   width: 300px;
 }
@@ -87,18 +89,104 @@ header {
   width: 100%;
   background-color: black;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
 }
 
 .section2titre {
-  width: 800px;
+  width: 100%;
   height: 100px;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 1px red;
 }
 
 .section2titre h2 {
   color: white;
-  text-align: center;
-  font-size: 35px;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px red;
+  letter-spacing: 1px;
+}
+
+.section2photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  height: 600px;
+}
+
+.histoire {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  box-shadow: 2px 2px 15px 1px red;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.histoire img{
+  width: 450px;
+  height: 300px;
+  border: 3px solid black;
+}
+
+.histoire h4{
+  color: black;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px red;
+}
+
+.photo {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  box-shadow: 2px 2px 15px 1px red;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.photo img{
+  width: 450px;
+  height: 300px;
+  border: 3px solid black;
+}
+
+.photo h4{
+  color: black;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px red;
+}
+
+.contact {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  box-shadow: 2px 2px 15px 1px red;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact img{
+  width: 450px;
+  height: 300px;
+  border: 3px solid black;
+}
+
+.contact h4{
+  color: black;
+  font-size: 40px;
   text-shadow: 1px 1px 1px red;
 }
