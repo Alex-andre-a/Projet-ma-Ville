@@ -104,23 +104,40 @@ header {
   width: 100%;
   height: auto;
   background-color: black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section1-1titre{
+  color: white;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px red;
+  letter-spacing: 1px;
+  padding-bottom: 50px;
+}
+
+.photoarrondissements {
+  height: 500px;
+  width: 650px;
+  background-color: white;
 }
 
 .tableau{
     color: white;
-    border: 1px solid white;
+    border: 1px solid red;
     border-collapse: collapse;
-    position: relative;
-    left: 20px;
-    top: 20px;
     text-align: center;
-    width: 550px;
+    width: 500px;
 }
+
 
 th, td{
     border: 1px solid white;
     padding: 10px 10px;
-    height: 100px;
 }
 
 .tableau img{
