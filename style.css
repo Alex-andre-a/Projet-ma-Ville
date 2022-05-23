@@ -20,12 +20,19 @@ header {
 }
 
 .drapeau {
+  border: 2px solid black;
   height: 60px;
-  width: 90px;
-  background-image: url(/assets/images/Accueil/header/320px-Flag_of_Japan.svg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid black;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rondrouge{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 30px;
 }
 
 .navbar {
@@ -85,7 +92,7 @@ header {
 /* ******************************* SECTION 2 **********************************  */
 
 .section2 {
-  height: 800px;
+  height: 900px;
   width: 100%;
   background-color: black;
   display: flex;
@@ -132,10 +139,10 @@ header {
 }
 
 .histoire a {
-  background-image: url(/assets/images/Accueil/section2/640px-Tokyo-all-wards.svg.png);
+  background-image: url(/assets/images/Accueil/section2/640px-Carte_Prefecture_Tokyo.png);
   background-size: contain;
+  background-repeat: no-repeat;
   border: 2px solid black;
-  background-position: 30px 0;
   width: 450px;
   height: 300px;
 }
@@ -211,7 +218,7 @@ header {
 /* ******************************* SECTION 3 **********************************  */
 
 .section3 {
-  height: 800px;
+  height: 900px;
   width: 100%;
   background-color: black;
   display: flex;
@@ -222,33 +229,40 @@ header {
 .section3left {
   height: 100%;
   width: 50%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 20px;
+  position: relative;
 }
 
 .section3photo1 {
   width: 850px;
-  height: 300px;
+  height: 550px;
   background-image: url(/assets/images/Accueil/section3/jj-ying-9Qwbfa_RM94-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -250px;
+  position: absolute;
+  top: 30px;
+  left: 60px;
 }
 
 .section3photo2 {
-  width: 300px;
-  height: 450px;
+  width: 350px;
+  height: 500px;
   background-image: url(/assets/images/Accueil/section3/yoav-aziz-tKCd-IWc4gI-unsplash.jpg);
   background-size: cover;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
 }
 
 .section3photo3 {
-  width: 450px;
-  height: 300px;
+  width: 500px;
+  height: 350px;
   background-image: url(/assets/images/Accueil/section3/su-san-lee-E_eWwM29wfU-unsplash.jpg);
   background-size: cover;
+  position: absolute;
+  bottom: 90px;
+  right: 30px;
+  background-position: -25px 0;
 }
 
 .section3right {
@@ -264,7 +278,8 @@ header {
 .section3titre {
   color: white;
   font-size: 50px;
-  text-shadow: 1px 1px 1px red;
+  text-shadow: 2px 2px 2px red;
+  letter-spacing: 1px;
 }
 
 /* ******************************* SECTION 4 **********************************  */
