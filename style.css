@@ -301,3 +301,61 @@ header {
 .footer p {
   font-size: 12px;
 }
+
+/* ******************************* RESPONSIVE **********************************  */
+
+@media screen and (max-width: 1440px){
+
+  .navbar {
+    gap: 180px;
+  }
+  
+  .section2photo {
+    gap: 20px;
+    width: 90%;
+    height: 550px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .section3photo1 {
+    width: 650px;
+  }
+  
+  .section3photo2 {
+    width: 250px;
+    height: 400px;
+    bottom: 100px;
+  }
+  
+  .section3photo3 {
+    width: 400px;
+    height: 250px;
+    bottom: 200px;
+    background-position: 0 0;
+  }
+  
+  .section3right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  .section3titre {
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px red;
+    letter-spacing: 1px;
+  }
+
+  .footer {
+    gap: 80px;
+  }
+
+}
+  
+

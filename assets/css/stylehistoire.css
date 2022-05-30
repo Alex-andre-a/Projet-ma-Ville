@@ -150,7 +150,6 @@ header {
 
 .tableau {
   color: white;
-  border: 1px solid red;
   border-collapse: collapse;
   text-align: center;
   width: 500px;
@@ -186,3 +185,36 @@ td {
 .footer p {
   font-size: 12px;
 }
+
+/* ******************************* RESPONSIVE **********************************  */
+
+@media screen and (max-width: 1440px){
+
+  .navbar {
+    gap: 180px;
+  }
+  
+  .tableau {
+    color: white;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  th,
+  td {
+    border: 1px solid white;
+    padding: 5px 5px;
+  }
+  
+  .tableau img {
+    width: 80px;
+    height: 55px;
+  }
+  
+  .footer {
+    gap: 80px;
+  }
+
+}
+  
+

@@ -129,3 +129,21 @@ textarea:hover {
 .footer p {
   font-size: 12px;
 }
+
+/* ******************************* RESPONSIVE **********************************  */
+
+@media screen and (max-width: 1440px){
+
+  .navbar {
+    gap: 180px;
+  }
+
+  .formulaire {
+    width: 350px;
+  }
+ 
+  .footer {
+    gap: 80px;
+  }
+
+}
