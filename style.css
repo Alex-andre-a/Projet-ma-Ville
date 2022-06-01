@@ -240,6 +240,7 @@ header {
   background-image: url(/assets/images/Accueil/section3/jj-ying-9Qwbfa_RM94-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border: 5px solid white;
 }
 
 .section3right {
@@ -259,6 +260,9 @@ header {
   letter-spacing: 1px;
 }
 
+.section3map {
+  border: 5px solid white;
+}
 
 /* ******************************* FOOTER **********************************  */
 
@@ -282,12 +286,11 @@ header {
 
 /* ******************************* RESPONSIVE **********************************  */
 
-@media screen and (max-width: 1440px){
-
+@media screen and (max-width: 1440px) {
   .navbar {
     gap: 180px;
   }
-  
+
   .section2photo {
     gap: 20px;
     width: 90%;
@@ -299,20 +302,20 @@ header {
   .section3photo1 {
     width: 650px;
   }
-  
+
   .section3photo2 {
     width: 250px;
     height: 400px;
     bottom: 100px;
   }
-  
+
   .section3photo3 {
     width: 400px;
     height: 250px;
     bottom: 200px;
     background-position: 0 0;
   }
-  
+
   .section3right {
     height: 100%;
     width: 50%;
@@ -322,7 +325,7 @@ header {
     align-items: center;
     gap: 100px;
   }
-  
+
   .section3titre {
     color: white;
     font-size: 50px;
@@ -333,7 +336,4 @@ header {
   .footer {
     gap: 80px;
   }
-
 }
-  
-

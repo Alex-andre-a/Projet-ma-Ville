@@ -84,16 +84,16 @@ header {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
   padding-bottom: 50px;
+  gap: 30px;
 }
 
 .photo01 {
   background-image: url(/assets/images/Galerie-photos/alex-P-OYtjdRmo4-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 600px;
+  width: 600px;
+  height: 800px;
   border: 5px solid white;
 }
 
@@ -101,8 +101,8 @@ header {
   background-image: url(/assets/images/Galerie-photos/david-edelstein-N4DbvTUDikw-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 600px;
   border: 5px solid white;
 }
 
@@ -110,8 +110,8 @@ header {
   background-image: url(/assets/images/Galerie-photos/atul-vinayak-LoZQWWzXJBw-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 600px;
+  width: 600px;
+  height: 800px;
   border: 5px solid white;
 }
 
@@ -137,8 +137,8 @@ header {
   background-image: url(/assets/images/Galerie-photos/erik-eastman-4HG5hlhmZg8-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 600px;
+  width: 600px;
+  height: 800px;
   border: 5px solid white;
 }
 
@@ -146,8 +146,8 @@ header {
   background-image: url(/assets/images/Galerie-photos/redd-nTBW1cOY1qI-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 600px;
+  width: 700px;
+  height: 1000px;
   border: 5px solid white;
 }
 
@@ -155,27 +155,37 @@ header {
   background-image: url(/assets/images/Galerie-photos/ryoji-iwata-TRJjPc0wss0-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 600px;
-  height: 800px;
+  width: 700px;
+  height: 1000px;
   border: 5px solid white;
 }
 
 .photo09 {
-  background-image: url(/assets/images/Galerie-photos/yu-kato-824OwkP7sgk-unsplash.jpg);
+  background-image: url(/assets/images/Galerie-photos/yu-kato-cddaZDt6uRw-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 800px;
-  height: 600px;
+  width: 700px;
+  height: 1000px;
   border: 5px solid white;
 }
 
 .photo10 {
-  background-image: url(/assets/images/Galerie-photos/yu-kato-cddaZDt6uRw-unsplash.jpg);
+  background-image: url(/assets/images/Galerie-photos/yu-kato-824OwkP7sgk-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 600px;
+  width: 1000px;
   height: 800px;
   border: 5px solid white;
+}
+
+.photo11 {
+  background-image: url(/assets/images/Galerie-photos/su-san-lee-E_eWwM29wfU-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 800px;
+  border: 5px solid white;
+  background-position: -180px 0;
 }
 
 /* ******************************* FOOTER **********************************  */
