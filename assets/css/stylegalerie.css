@@ -83,7 +83,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
   padding-bottom: 50px;
 }
@@ -200,14 +200,12 @@ header {
 
 /* ******************************* RESPONSIVE **********************************  */
 
-@media screen and (max-width: 1440px){
-
+@media screen and (max-width: 1440px) {
   .navbar {
     gap: 180px;
   }
- 
+
   .footer {
     gap: 80px;
   }
-
 }

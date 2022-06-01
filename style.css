@@ -229,40 +229,17 @@ header {
 .section3left {
   height: 100%;
   width: 50%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section3photo1 {
-  width: 850px;
-  height: 550px;
+  width: 80%;
+  height: 80%;
   background-image: url(/assets/images/Accueil/section3/jj-ying-9Qwbfa_RM94-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 -250px;
-  position: absolute;
-  top: 30px;
-  left: 60px;
-}
-
-.section3photo2 {
-  width: 350px;
-  height: 500px;
-  background-image: url(/assets/images/Accueil/section3/yoav-aziz-tKCd-IWc4gI-unsplash.jpg);
-  background-size: cover;
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-}
-
-.section3photo3 {
-  width: 500px;
-  height: 350px;
-  background-image: url(/assets/images/Accueil/section3/su-san-lee-E_eWwM29wfU-unsplash.jpg);
-  background-size: cover;
-  position: absolute;
-  bottom: 90px;
-  right: 30px;
-  background-position: -25px 0;
 }
 
 .section3right {
@@ -281,6 +258,7 @@ header {
   text-shadow: 2px 2px 2px red;
   letter-spacing: 1px;
 }
+
 
 /* ******************************* FOOTER **********************************  */
 
