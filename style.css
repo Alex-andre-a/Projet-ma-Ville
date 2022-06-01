@@ -262,6 +262,8 @@ header {
 
 .section3map {
   border: 5px solid white;
+  border-bottom: 0px;
+  background-color: white;
 }
 
 /* ******************************* FOOTER **********************************  */
@@ -299,38 +301,15 @@ header {
     margin-right: 20px;
   }
 
-  .section3photo1 {
-    width: 650px;
-  }
-
-  .section3photo2 {
-    width: 250px;
-    height: 400px;
-    bottom: 100px;
-  }
-
-  .section3photo3 {
-    width: 400px;
-    height: 250px;
-    bottom: 200px;
-    background-position: 0 0;
-  }
-
-  .section3right {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-  }
-
   .section3titre {
     color: white;
     font-size: 50px;
     text-shadow: 2px 2px 2px red;
     letter-spacing: 1px;
+  }
+
+  .section3photo1 {
+    background-position: -200px 0;
   }
 
   .footer {
