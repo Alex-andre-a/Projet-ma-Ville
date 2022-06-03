@@ -316,8 +316,6 @@ header {
   top: -60px;
 }
 
-
-
 /* ******************************* RESPONSIVE 1440 **********************************  */
 
 @media screen and (max-width: 1440px) {
@@ -592,10 +590,10 @@ header {
   .footer p {
     font-size: 10px;
   }
-}
 
-.hautdepage{
-  display: none;
+  .hautdepage{
+    display: none;
+  }
 }
 
 /* ******************************* RESPONSIVE 425 **********************************  */
@@ -875,5 +873,4 @@ header {
   .section3right{
     width: 100%;
   }
-
 }

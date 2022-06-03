@@ -60,7 +60,7 @@ header {
 /* ******************************* SECTION 1 **********************************  */
 
 .section1 {
-  height: 1000px;
+  height: auto;
   width: 100%;
   background-color: black;
   display: flex;
@@ -105,8 +105,6 @@ header {
 .histoire a:hover {
   text-decoration: none;
 }
-
-
 
 /* ******************************* SECTION 1-1 **********************************  */
 
@@ -181,38 +179,584 @@ td {
 .hautdepage a{
   position: absolute;
   right: 10px;
-  top: -60px;
+  top: 0px;
 }
 
 /* ******************************* RESPONSIVE **********************************  */
 
-@media screen and (max-width: 1440px){
+/* ******************************* RESPONSIVE 1440 **********************************  */
 
+@media screen and (max-width: 1440px) {
   .navbar {
     gap: 180px;
   }
-  
+
+  /* ******************************* SECTION 1-1 **********************************  */
+
+  .section1-1 {
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 0;
+  }
+
   .tableau {
     color: white;
     border-collapse: collapse;
     text-align: center;
+    max-width: 1200px;
+    overflow-x: auto;
   }
-  
-  th,
-  td {
-    border: 1px solid white;
-    padding: 5px 5px;
+
+  .tableau tr {
+    display: block;
+    margin-bottom: 40px;
   }
-  
+
+  .tableau td {
+    display: block;
+    text-align: right;
+  }
+
+  .tableau th {
+    display: none;
+  }
+
+  .tableau td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+
   .tableau img {
-    width: 80px;
-    height: 55px;
+    width: 100px;
+    height: 65px;
   }
-  
+
+  /* ***************** FOOTER ****************  */
+
   .footer {
     gap: 80px;
   }
-
 }
-  
 
+/* ******************************* RESPONSIVE 1024 **********************************  */
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    gap: 100px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .drapeau {
+    height: 40px;
+    width: 80px;
+  }
+
+  .rondrouge {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+
+  /* ***************** SECTION 1 ****************  */
+
+  .section1titre {
+    top: 750px;
+    right: 80px;
+    height: auto;
+    width: 250px;
+  }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2 {
+    height: 600px;
+  }
+
+  .section2titre {
+    height: 80px;
+    margin-top: 10px;
+  }
+
+  .section2titre h2 {
+    font-size: 40px;
+  }
+
+  .section2photo {
+    gap: 20px;
+    height: auto;
+  }
+
+  .histoire {
+    height: 400px;
+    width: 300px;
+    gap: 20px;
+  }
+
+  .histoire a {
+    width: 100%;
+    height: 200px;
+  }
+
+  .histoire h4 {
+    font-size: 30px;
+  }
+
+  .photo {
+    height: 400px;
+    width: 300px;
+    gap: 20px;
+  }
+
+  .photo a {
+    width: 100%;
+    height: 200px;
+  }
+
+  .photo h4 {
+    font-size: 30px;
+  }
+
+  .contact {
+    height: 400px;
+    width: 300px;
+    gap: 20px;
+  }
+
+  .contact a {
+    width: 100%;
+    height: 200px;
+  }
+
+  .contact h4 {
+    font-size: 30px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3 {
+    height: 700px;
+  }
+
+  .section3left {
+    height: 80%;
+  }
+
+  .section3right {
+    gap: 20px;
+  }
+
+  .section3titre {
+    font-size: 40px;
+  }
+
+  .section3map iframe {
+    width: 350px;
+  }
+
+  /* ***************** FOOTER ****************  */
+
+  .footer {
+    gap: 60px;
+  }
+}
+
+/* ******************************* RESPONSIVE 768 **********************************  */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    gap: 50px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .drapeau {
+    width: 70px;
+  }
+
+  /* ***************** SECTION 1 ****************  */
+
+  .section1 {
+    height: 500px;
+  }
+
+  .section1 iframe {
+    height: 500px;
+  }
+
+  .section1titre {
+    top: 480px;
+    right: 20px;
+    width: auto;
+  }
+
+  .section1titre h1 {
+    font-size: 60px;
+  }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2 {
+    height: 500px;
+  }
+
+  .section2titre {
+    height: auto;
+  }
+
+  .section2titre h2 {
+    font-size: 30px;
+  }
+
+  .section2photo {
+    gap: 40px;
+  }
+
+  .histoire {
+    height: 350px;
+  }
+
+  .histoire h4 {
+    font-size: 20px;
+  }
+
+  .photo {
+    height: 350px;
+  }
+
+  .photo h4 {
+    font-size: 20px;
+  }
+
+  .contact {
+    height: 350px;
+  }
+
+  .contact h4 {
+    font-size: 20px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3 {
+    height: 500px;
+  }
+
+  .section3right {
+    gap: 20px;
+  }
+
+  .section3titre {
+    font-size: 30px;
+  }
+
+  .section3map iframe {
+    height: 300px;
+  }
+
+  /* ***************** FOOTER ****************  */
+
+  .footer {
+    gap: 20px;
+  }
+
+  .footer h5 {
+    font-size: 8px;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+
+  .hautdepage {
+    display: none;
+  }
+}
+
+/* ******************************* RESPONSIVE 425 **********************************  */
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .drapeau {
+    width: 70px;
+  }
+
+  /* ***************** SECTION 1 ****************  */
+
+  .section1 {
+    height: auto;
+  }
+
+  .section1 iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .section1titre {
+    top: 215px;
+    right: 10px;
+    width: auto;
+  }
+
+  .section1titre h1 {
+    font-size: 25px;
+  }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2 {
+    height: 250px;
+  }
+
+  .section2titre {
+    height: auto;
+  }
+
+  .section2titre h2 {
+    font-size: 15px;
+  }
+
+  .section2photo {
+    gap: 20px;
+  }
+
+  .histoire {
+    height: 180px;
+  }
+
+  .histoire a {
+    height: 100px;
+  }
+
+  .histoire h4 {
+    font-size: 12px;
+  }
+
+  .photo {
+    height: 180px;
+  }
+
+  .photo h4 {
+    font-size: 12px;
+  }
+
+  .photo a {
+    height: 100px;
+  }
+
+  .contact {
+    height: 180px;
+  }
+
+  .contact h4 {
+    font-size: 12px;
+  }
+
+  .contact a {
+    height: 100px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3 {
+    height: auto;
+    flex-flow: column-reverse wrap;
+  }
+
+  .section3left {
+    width: 100%;
+    margin-left: 0;
+    height: 300px;
+  }
+
+  .section3right {
+    padding-top: 40px;
+    gap: 20px;
+  }
+
+  .section3titre {
+    font-size: 15px;
+  }
+
+  .section3map iframe {
+    height: 250px;
+  }
+
+  /* ***************** FOOTER ****************  */
+
+  .footer {
+    height: auto;
+    gap: 15px;
+  }
+
+  .footer h5 {
+    font-size: 6px;
+  }
+
+  .footer p {
+    font-size: 8px;
+  }
+}
+
+/* ******************************* RESPONSIVE 375 **********************************  */
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    gap: 15px;
+  }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2titre h2 {
+    font-size: 12px;
+  }
+
+  .histoire {
+    height: 150px;
+  }
+
+  .histoire h4 {
+    font-size: 10px;
+  }
+
+  .photo {
+    height: 150px;
+  }
+
+  .photo h4 {
+    font-size: 10px;
+  }
+
+  .contact {
+    height: 150px;
+  }
+
+  .contact h4 {
+    font-size: 10px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3left {
+    height: 250px;
+  }
+
+  .section3titre {
+    font-size: 12px;
+  }
+
+  .section3map iframe {
+    height: 200px;
+  }
+
+  /* ***************** FOOTER ****************  */
+
+  .footer {
+    height: auto;
+    gap: 15px;
+  }
+
+  .footer h5 {
+    font-size: 6px;
+  }
+
+  .footer p {
+    font-size: 8px;
+  }
+}
+
+/* ******************************* RESPONSIVE 320 **********************************  */
+
+@media screen and (max-width: 425px) {
+  header {
+    height: auto;
+  }
+
+  .navbar {
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 8px;
+  }
+
+  /* ***************** SECTION 1 ****************  */
+
+  .section1titre {
+    top: 200px;
+  }
+
+  .section1titre h1 {
+    font-size: 22px;
+  }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2 {
+    height: auto;
+  }
+
+  .section2titre h2 {
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+
+  .histoire {
+    height: 130px;
+  }
+
+  .histoire h4 {
+    font-size: 8px;
+  }
+
+  .histoire a {
+    height: 80px;
+  }
+
+  .photo {
+    height: 130px;
+  }
+
+  .photo h4 {
+    font-size: 8px;
+  }
+
+  .photo a {
+    height: 80px;
+  }
+
+  .contact {
+    height: 130px;
+  }
+
+  .contact h4 {
+    font-size: 8px;
+  }
+
+  .contact a {
+    height: 80px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3right {
+    width: 100%;
+  }
+}
