@@ -200,6 +200,12 @@ header {
   font-size: 12px;
 }
 
+.hautdepage a{
+  position: absolute;
+  right: 10px;
+  top: -60px;
+}
+
 /* ******************************* RESPONSIVE **********************************  */
 
 @media screen and (max-width: 1440px) {

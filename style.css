@@ -292,6 +292,7 @@ header {
 /* ******************************* FOOTER **********************************  */
 
 .footer {
+  position: relative;
   width: 100%;
   height: 60px;
   display: flex;
@@ -308,6 +309,14 @@ header {
 .footer p {
   font-size: 12px;
 }
+
+.hautdepage a{
+  position: absolute;
+  right: 10px;
+  top: -60px;
+}
+
+
 
 /* ******************************* RESPONSIVE 1440 **********************************  */
 
@@ -585,6 +594,10 @@ header {
   }
 }
 
+.hautdepage{
+  display: none;
+}
+
 /* ******************************* RESPONSIVE 425 **********************************  */
 
 @media screen and (max-width: 425px) {
@@ -603,27 +616,28 @@ header {
   /* ***************** SECTION 1 ****************  */
 
   .section1 {
-    height: 500px;
+    height: auto;
   }
 
   .section1 iframe {
-    height: 500px;
+    width: 100%;
+    height: auto;
   }
 
   .section1titre {
-    top: 480px;
-    right: 20px;
+    top: 215px;
+    right: 10px;
     width: auto;
   }
 
   .section1titre h1 {
-    font-size: 60px;
+    font-size: 25px;
   }
 
   /* ***************** SECTION 2 ****************  */
 
   .section2 {
-    height: 500px;
+    height: 250px;
   }
 
   .section2titre {
@@ -631,66 +645,235 @@ header {
   }
 
   .section2titre h2 {
-    font-size: 30px;
+    font-size: 15px;
   }
 
   .section2photo {
-    gap: 40px;
+    gap: 20px;
   }
 
   .histoire {
-    height: 350px;
+    height: 180px;
+  }
+
+  .histoire a {
+    height: 100px;
   }
 
   .histoire h4 {
-    font-size: 20px;
+    font-size: 12px;
   }
 
   .photo {
-    height: 350px;
+    height: 180px;
   }
 
   .photo h4 {
-    font-size: 20px;
+    font-size: 12px;
+  }
+
+  .photo a {
+    height: 100px;
   }
 
   .contact {
-    height: 350px;
+    height: 180px;
   }
 
   .contact h4 {
-    font-size: 20px;
+    font-size: 12px;
+  }
+
+  .contact a {
+    height: 100px;
   }
 
   /* ***************** SECTION 3 ****************  */
 
   .section3 {
-    height: 500px;
+    height: auto;
+    flex-flow: column-reverse wrap;
+  }
+
+  .section3left{
+    width: 100%;
+    margin-left: 0;
+    height: 300px;
   }
 
   .section3right {
+    padding-top: 40px;
     gap: 20px;
   }
 
   .section3titre {
-    font-size: 30px;
+    font-size: 15px;
   }
 
   .section3map iframe {
-    height: 300px;
+    height: 250px;
   }
 
   /* ***************** FOOTER ****************  */
 
   .footer {
-    gap: 20px;
+    height: auto;
+    gap: 15px;
   }
 
   .footer h5 {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .footer p {
+    font-size: 8px;
+  }
+}
+
+/* ******************************* RESPONSIVE 375 **********************************  */
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    gap: 15px;
+  }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2titre h2 {
+    font-size: 12px;
+  }
+
+  .histoire {
+    height: 150px;
+  }
+
+  .histoire h4 {
     font-size: 10px;
   }
+
+  .photo {
+    height: 150px;
+  }
+
+  .photo h4 {
+    font-size: 10px;
+  }
+
+  .contact {
+    height: 150px;
+  }
+
+  .contact h4 {
+    font-size: 10px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3left{
+    height: 250px;
+  }
+
+  .section3titre {
+    font-size: 12px;
+  }
+
+  .section3map iframe {
+    height: 200px;
+  }
+
+  /* ***************** FOOTER ****************  */
+
+  .footer {
+    height: auto;
+    gap: 15px;
+  }
+
+  .footer h5 {
+    font-size: 6px;
+  }
+
+  .footer p {
+    font-size: 8px;
+  }
+}
+
+/* ******************************* RESPONSIVE 320 **********************************  */
+
+@media screen and (max-width: 425px) {
+
+  header{
+    height: auto;
+  }
+
+  .navbar {
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 8px;
+  }
+
+    /* ***************** SECTION 1 ****************  */
+
+    .section1titre {
+      top: 200px;
+    }
+  
+    .section1titre h1 {
+      font-size: 22px;
+    }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2{
+    height: auto;
+  }
+
+  .section2titre h2 {
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+
+  .histoire {
+    height: 130px;
+  }
+
+  .histoire h4 {
+    font-size: 8px;
+  }
+
+  .histoire a {
+    height: 80px;
+  }
+
+  .photo {
+    height: 130px;
+  }
+
+  .photo h4 {
+    font-size: 8px;
+  }
+
+  .photo a {
+    height: 80px;
+  }
+
+  .contact {
+    height: 130px;
+  }
+
+  .contact h4 {
+    font-size: 8px;
+  }
+
+  .contact a {
+    height: 80px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3right{
+    width: 100%;
+  }
+
 }
