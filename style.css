@@ -142,6 +142,7 @@ header {
   background-image: url(/assets/images/Accueil/section2/640px-Carte_Prefecture_Tokyo.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   border: 2px solid black;
   width: 450px;
   height: 300px;
@@ -229,18 +230,40 @@ header {
 .section3left {
   height: 100%;
   width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  margin-left: 15px;
+  padding: 10px;
 }
 
 .section3photo1 {
-  width: 80%;
-  height: 80%;
   background-image: url(/assets/images/Accueil/section3/jj-ying-9Qwbfa_RM94-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   border: 5px solid white;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.section3photo2 {
+  background-image: url(/assets/images/Accueil/section3/ling-xian-su-7FV4bEljHe8-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid white;
+  grid-column: 2;
+  grid-row: span 2;
+}
+
+.section3photo3 {
+  background-image: url(/assets/images/Accueil/section3/jase-bloor-oCZHIa1D4EU-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid white;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .section3right {
@@ -286,12 +309,14 @@ header {
   font-size: 12px;
 }
 
-/* ******************************* RESPONSIVE **********************************  */
+/* ******************************* RESPONSIVE 1440 **********************************  */
 
 @media screen and (max-width: 1440px) {
   .navbar {
     gap: 180px;
   }
+
+  /* ***************** SECTION 2 ****************  */
 
   .section2photo {
     gap: 20px;
@@ -301,6 +326,8 @@ header {
     margin-right: 20px;
   }
 
+  /* ***************** SECTION 3 ****************  */
+
   .section3titre {
     color: white;
     font-size: 50px;
@@ -308,11 +335,362 @@ header {
     letter-spacing: 1px;
   }
 
-  .section3photo1 {
-    background-position: -200px 0;
+  .section3left {
+    height: 90%;
   }
+
+  .section3map iframe {
+    width: 450px;
+  }
+
+  /* ***************** FOOTER ****************  */
 
   .footer {
     gap: 80px;
+  }
+}
+
+/* ******************************* RESPONSIVE 1024 **********************************  */
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    gap: 100px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .drapeau {
+    height: 40px;
+    width: 80px;
+  }
+
+  .rondrouge {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+
+  /* ***************** SECTION 1 ****************  */
+
+  .section1titre {
+    top: 750px;
+    right: 80px;
+    height: auto;
+    width: 250px;
+  }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2 {
+    height: 600px;
+  }
+
+  .section2titre {
+    height: 80px;
+    margin-top: 10px;
+  }
+
+  .section2titre h2 {
+    font-size: 40px;
+  }
+
+  .section2photo {
+    gap: 20px;
+    height: auto;
+  }
+
+  .histoire {
+    height: 400px;
+    width: 300px;
+    gap: 20px;
+  }
+
+  .histoire a {
+    width: 100%;
+    height: 200px;
+  }
+
+  .histoire h4 {
+    font-size: 30px;
+  }
+
+  .photo {
+    height: 400px;
+    width: 300px;
+    gap: 20px;
+  }
+
+  .photo a {
+    width: 100%;
+    height: 200px;
+  }
+
+  .photo h4 {
+    font-size: 30px;
+  }
+
+  .contact {
+    height: 400px;
+    width: 300px;
+    gap: 20px;
+  }
+
+  .contact a {
+    width: 100%;
+    height: 200px;
+  }
+
+  .contact h4 {
+    font-size: 30px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3 {
+    height: 700px;
+  }
+
+  .section3left {
+    height: 80%;
+  }
+
+  .section3right {
+    gap: 20px;
+  }
+
+  .section3titre {
+    font-size: 40px;
+  }
+
+  .section3map iframe {
+    width: 350px;
+  }
+
+  /* ***************** FOOTER ****************  */
+
+  .footer {
+    gap: 60px;
+  }
+}
+
+/* ******************************* RESPONSIVE 768 **********************************  */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    gap: 50px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .drapeau {
+    width: 70px;
+  }
+
+  /* ***************** SECTION 1 ****************  */
+
+  .section1 {
+    height: 500px;
+  }
+
+  .section1 iframe {
+    height: 500px;
+  }
+
+  .section1titre {
+    top: 480px;
+    right: 20px;
+    width: auto;
+  }
+
+  .section1titre h1 {
+    font-size: 60px;
+  }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2 {
+    height: 500px;
+  }
+
+  .section2titre {
+    height: auto;
+  }
+
+  .section2titre h2 {
+    font-size: 30px;
+  }
+
+  .section2photo {
+    gap: 40px;
+  }
+
+  .histoire {
+    height: 350px;
+  }
+
+  .histoire h4 {
+    font-size: 20px;
+  }
+
+  .photo {
+    height: 350px;
+  }
+
+  .photo h4 {
+    font-size: 20px;
+  }
+
+  .contact {
+    height: 350px;
+  }
+
+  .contact h4 {
+    font-size: 20px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3 {
+    height: 500px;
+  }
+
+  .section3right {
+    gap: 20px;
+  }
+
+  .section3titre {
+    font-size: 30px;
+  }
+
+  .section3map iframe {
+    height: 300px;
+  }
+
+  /* ***************** FOOTER ****************  */
+
+  .footer {
+    gap: 20px;
+  }
+
+  .footer h5 {
+    font-size: 8px;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+}
+
+/* ******************************* RESPONSIVE 425 **********************************  */
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .drapeau {
+    width: 70px;
+  }
+
+  /* ***************** SECTION 1 ****************  */
+
+  .section1 {
+    height: 500px;
+  }
+
+  .section1 iframe {
+    height: 500px;
+  }
+
+  .section1titre {
+    top: 480px;
+    right: 20px;
+    width: auto;
+  }
+
+  .section1titre h1 {
+    font-size: 60px;
+  }
+
+  /* ***************** SECTION 2 ****************  */
+
+  .section2 {
+    height: 500px;
+  }
+
+  .section2titre {
+    height: auto;
+  }
+
+  .section2titre h2 {
+    font-size: 30px;
+  }
+
+  .section2photo {
+    gap: 40px;
+  }
+
+  .histoire {
+    height: 350px;
+  }
+
+  .histoire h4 {
+    font-size: 20px;
+  }
+
+  .photo {
+    height: 350px;
+  }
+
+  .photo h4 {
+    font-size: 20px;
+  }
+
+  .contact {
+    height: 350px;
+  }
+
+  .contact h4 {
+    font-size: 20px;
+  }
+
+  /* ***************** SECTION 3 ****************  */
+
+  .section3 {
+    height: 500px;
+  }
+
+  .section3right {
+    gap: 20px;
+  }
+
+  .section3titre {
+    font-size: 30px;
+  }
+
+  .section3map iframe {
+    height: 300px;
+  }
+
+  /* ***************** FOOTER ****************  */
+
+  .footer {
+    gap: 20px;
+  }
+
+  .footer h5 {
+    font-size: 8px;
+  }
+
+  .footer p {
+    font-size: 10px;
   }
 }
